@@ -1,4 +1,3 @@
-cat > Dockerfile <<'EOF'
 FROM debian:bookworm-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -31,4 +30,3 @@ RUN git clone --depth 1 \
 ENV PAGER=less
 
 ENTRYPOINT ["/usr/local/bin/searchsploit"]
-EOF
